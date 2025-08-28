@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    // Ensure you have @babel/preset-react and it's configured for automatic runtime
+    ['@babel/preset-react', { runtime: 'automatic' }],
+  ],
+  plugins: []
+}
+	
+

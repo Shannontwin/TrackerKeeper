@@ -1,0 +1,80 @@
+{
+  "name": "trackerkeeper-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-syntax-flow": "^7.27.1",
+    "@babel/preset-flow": "^7.27.1",
+    "@googlemaps/react-wrapper": "^1.2.0",
+    "@react-native-community/cli": "^20.0.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react-native": "^0.73.0",
+    "@vis.gl/react-google-maps": "^1.5.5",
+    "axios": "^1.11.0",
+    "expo-location": "^18.1.6",
+    "firebase": "^12.1.0",
+    "get-yarn-workspaces": "^1.0.2",
+    "google-map-react": "^2.2.5",
+    "googlemaps": "^1.12.0",
+    "link": "^2.1.1",
+    "react": "^19.1.1",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.1",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^7.62.0",
+    "react-native": "^0.75.5",
+    "react-native-ble-manager": "^12.1.5",
+    "react-native-ble-plx": "^3.5.0",
+    "react-native-tscodegen": "^0.72.0",
+    "react-native-tscodegen-types": "^0.71.0",
+    "react-native-watch-connectivity": "^1.1.0",
+    "react-native-web": "^0.21.1",
+    "react-native-windows": "0.75.19",
+    "react-router-dom": "^7.8.1",
+    "react-scripts": "5.0.1",
+    "react-use-pkg": "^2.0.3",
+    "reactjs-popup": "^2.0.6",
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.22"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "windows": "react-native run-windows",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "metro-config": "^0.80.12"
+  },
+  "expo": {
+    "plugins": [
+      "react-native-ble-plx"
+    ]
+  }
+}

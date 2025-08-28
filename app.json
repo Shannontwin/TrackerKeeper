@@ -1,0 +1,33 @@
+{
+  "name": "TrackerKeeperApp",
+  "displayName": "TrackerKeeperApp",
+  "expo": {
+    "name": "TrackerKeeperApp",
+    "slug": "tracker-keeper-native-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/phone.png",
+    "userInterfaceStyle": "light",
+    "splash
+": {
+      "image": "./public/phone.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./public/phone.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+
+    }
+  }
+}
