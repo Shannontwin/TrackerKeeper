@@ -31,7 +31,7 @@ import io from 'socket.io-client';
 import CreateRoom from './CreateRoom';
 import JoinRoom from './JoinRoom';
 
-const socket = io('http://localhost:3000'); // Connect to your server. It was previously port 4000
+const socket = io('http://www.tracker-keeper.com'); // Connect to your server. It was previously port 4000
 
 const MAX_RANGE = 50; // Maximum range between phone and smartwatch in meters
 const MILLISECONDS = 60000; //one minute
