@@ -7,6 +7,7 @@ metadata:
   uid: 59875ee5-c6ae-4b7a-bcf2-a13b013ad104
   resourceVersion: AAY9c+EGgRE
   generation: 2
+  CLOUD_LOGGING_ONLY: NONE
   creationTimestamp: '2025-08-28T21:48:22.036709Z'
   labels:
     gcb-trigger-id: 0975788d-ecda-49e5-b689-ef64aeecabef
@@ -76,3 +77,4 @@ status:
   url: https://trackerkeeper-dgtqvsxhca-uk.a.run.app
   address:
     url: https://trackerkeeper-dgtqvsxhca-uk.a.run.app
+
