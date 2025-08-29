@@ -1,114 +1,19 @@
 {
-  "apiVersion": "serving.knative.dev/v1",
-  "kind": "Service",
-  "metadata": {
-    "name": "trackerkeeper",
-    "namespace": "299943977590",
-    "selfLink": "/apis/serving.knative.dev/v1/namespaces/299943977590/services/trackerkeeper",
-    "uid": "59875ee5-c6ae-4b7a-bcf2-a13b013ad104",
-    "resourceVersion": "AAY9c+EGgRE",
-    "generation": 2,
-    "creationTimestamp": "2025-08-28T21:48:22.036709Z",
-    "labels": {
-      "gcb-trigger-id": "0975788d-ecda-49e5-b689-ef64aeecabef",
-      "managed-by": "gcp-cloud-build-deploy-cloud-run",
-      "gcb-trigger-region": "global",
-      "run.googleapis.com/satisfiesPzs": "true",
-      "cloud.googleapis.com/location": "us-east4"
-    },
-    "annotations": {
-      "serving.knative.dev/creator": "semicoloncorporation@gmail.com",
-      "serving.knative.dev/lastModifier": "semicoloncorporation@gmail.com",
-      "run.googleapis.com/client-name": "cloud-console",
-      "run.googleapis.com/operation-id": "42b9403a-19d6-4644-8e90-90b31f1b57d5",
-      "run.googleapis.com/ingress": "all",
-      "run.googleapis.com/ingress-status": "all",
-      "run.googleapis.com/invoker-iam-disabled": "true",
-      "run.googleapis.com/urls": "[\"https://trackerkeeper-299943977590.us-east4.run.app\",\"https://trackerkeeper-dgtqvsxhca-uk.a.run.app\"]"
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/gcloud",
+      "args": [
+        "run",
+        "deploy",
+        "my-service",
+        "--image",
+        "gcr.io/trackerkeeper-app/my-image",
+        "--region",
+        "us-east4"
+      ]
     }
-  },
-  "spec": {
-    "template": {
-      "metadata": {
-        "labels": {
-          "run.googleapis.com/startupProbeType": "Default"
-        },
-        "annotations": {
-          "run.googleapis.com/client-name": "cloud-console",
-          "autoscaling.knative.dev/maxScale": "3",
-          "run.googleapis.com/startup-cpu-boost": "true"
-        }
-      },
-      "spec": {
-        "containerConcurrency": 80,
-        "timeoutSeconds": 300,
-        "serviceAccountName": "299943977590-compute@developer.gserviceaccount.com",
-        "containers": [
-          {
-            "name": "placeholder-1",
-            "image": "gcr.io/cloudrun/placeholder",
-            "ports": [
-              {
-                "name": "http1",
-                "containerPort": 8080
-              }
-            ],
-            "resources": {
-              "limits": {
-                "cpu": "1000m",
-                "memory": "512Mi"
-              }
-            },
-            "startupProbe": {
-              "timeoutSeconds": 240,
-              "periodSeconds": 240,
-              "failureThreshold": 1,
-              "tcpSocket": {
-                "port": 8080
-              }
-            }
-          }
-        ]
-      }
-    },
-    "traffic": [
-      {
-        "percent": 100,
-        "latestRevision": true
-      }
-    ]
-  },
-  "status": {
-    "observedGeneration": 2,
-    "conditions": [
-      {
-        "type": "Ready",
-        "status": "True",
-        "lastTransitionTime": "2025-08-28T21:49:26.097169Z"
-      },
-      {
-        "type": "ConfigurationsReady",
-        "status": "True",
-        "lastTransitionTime": "2025-08-28T21:49:24.533355Z"
-      },
-      {
-        "type": "RoutesReady",
-        "status": "True",
-        "lastTransitionTime": "2025-08-28T21:49:26.052007Z"
-      }
-    ],
-    "latestReadyRevisionName": "trackerkeeper-00001-2rt",
-    "latestCreatedRevisionName": "trackerkeeper-00001-2rt",
-    "traffic": [
-      {
-        "revisionName": "trackerkeeper-00001-2rt",
-        "percent": 100,
-        "latestRevision": true
-      }
-    ],
-    "url": "https://trackerkeeper-dgtqvsxhca-uk.a.run.app",
-    "address": {
-      "url": "https://trackerkeeper-dgtqvsxhca-uk.a.run.app"
-    }
-  }
+  ],
+  "images": [
+    "gcr.io/trackerkeeper-app/my-image"
+  ]
 }
