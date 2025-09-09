@@ -48,7 +48,8 @@
     "eject": "react-scripts eject",
     "windows": "react-native run-windows",
     "android": "react-native run-android",
-    "ios": "react-native run-ios"
+    "ios": "react-native run-ios",
+    "artifactregistry-login": "npx google-artifactregistry-auth"
   },
   "eslintConfig": {
     "extends": [
