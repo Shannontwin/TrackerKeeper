@@ -1,0 +1,5 @@
+ {
+      "title": "tracking_device_app_project",
+      "description": "Grant access only if resource name starts with 'projects/'",
+      "expression": "resource.name.startsWith('projects/')"
+    }
